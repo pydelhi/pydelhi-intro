@@ -1,0 +1,49 @@
+
+so what is pydelhi and how to make the most out of it.
+
+- a volunteer organization
+- a group of technically inclined students, professionals and teachers and entrepreneurs
+- who want to learn something new 
+- having a common primary interest in the python programming language.
+- 
+
+what do we usually do:
+- have a short weekly VOIP call using mumble
+- have fortnightly meetups in the physical world.
+- organize workshops in educational institutions.
+
+what are our meetups like:
+- a workshop
+- a talk
+- physical world networking
+- coding sprints (coming soon!!)
+- participants from all over India
+
+how does it help you?
+- Hire or get hired!
+- find collaborators for your project.
+- free consulting / mentoring for friends **
+- learn new stuff!!
+
+how can you help?
+- host a meetup / organize a workshop in your institute
+    - space
+    - infrastructure
+    - sponsorship
+- increase pydelhi's reach with social media
+- conduct a workshop / give a talk.
+- want to code: projects at github.com/pydelhi
+
+
+want to stay in touch?
+- twitter: twitter.com/pydelhi
+- mailinglist
+- irc freenode.net/#pydelhi
+- voip: mumble
+
+
+python-heads in the country:
+- meet once a year at pyconindia
+- the next one is happening in Delhi
+- we need your help to make it happen.
+- come be a part of history !!
