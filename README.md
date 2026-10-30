@@ -17,7 +17,7 @@ The deck is made for a projector: nothing on a slide is clicked or hovered. Ever
 
 Two slides have steps inside them. On "One Saturday a month, many ways in." each press lights the next format and shows its photo. On "Saturdays look like this." each press tosses the top photo off the pile. The mouse cursor hides itself when it isn't moving.
 
-Each slide has its own address (`#3`), so you can open straight to one. On a phone, swipe. To get a PDF, print the page from the browser: each slide is one page.
+Each slide has its own address (`#3`), so you can open straight to one. On a phone, swipe or use the next and back buttons, which show only there. To get a PDF, print the page from the browser: each slide is one page.
 
 ## Changing it
 

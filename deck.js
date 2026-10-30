@@ -426,6 +426,8 @@ function go(n, { replace = false, instant = false, back = false } = {}) {
   steps?.show(stepAt, dir, true);
   moveSnake(n, instant);
   enter(slide);
+  prevBtn.disabled = n === 0;
+  nextBtn.disabled = n === last;
 }
 
 // one press: the next step inside this slide if it has one left, otherwise the next slide
@@ -447,6 +449,11 @@ addEventListener('keydown', e => {
     case 'f': case 'F': document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.(); break;
   }
 });
+
+// on a phone there are next and back buttons as well (shown only there, styles.css)
+const prevBtn = document.getElementById('prev'), nextBtn = document.getElementById('next');
+prevBtn.addEventListener('click', () => step(-1));
+nextBtn.addEventListener('click', () => step(1));
 
 // anyone opening the link on a phone can swipe through it; vertical swipes scroll the slide
 let touch = null;

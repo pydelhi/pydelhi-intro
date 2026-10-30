@@ -257,6 +257,17 @@ h1 .light{font-weight:300;color:var(--gray-400)}
 }
 @keyframes tongue{0%,72%,100%{transform:none}76%,84%{transform:scaleX(.15)}80%,88%{transform:none}}
 
+/* ─── NEXT / BACK: phones only; on a projector the deck is driven from the keyboard ─── */
+.pager{display:none}
+.pager-btn{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;cursor:pointer;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(0,0,0,.08);box-shadow:0 4px 24px rgba(0,0,0,.08),0 1px 4px rgba(0,0,0,.04);
+  color:var(--navy);font-size:20px;-webkit-tap-highlight-color:transparent;
+  transition:transform .2s var(--ease),opacity .3s ease}
+.pager-btn:active{transform:scale(.92)}
+.pager-btn:disabled{opacity:0;pointer-events:none}
+#next{background:var(--navy);color:#fff;border-color:var(--navy)}
+
 /* the cursor hides itself when it rests (deck.js) */
 body.idle,body.idle *{cursor:none!important}
 
@@ -270,7 +281,10 @@ body.idle,body.idle *{cursor:none!important}
 /* ─── PHONES: the same deck, stacked, in fixed sizes ─── */
 @media (max-width:700px){
   :root{--u:7px;--fs-h1:44px;--fs-h2:30px;--fs-stat:32px;--fs-h3:21px;--fs-body:16px;--fs-pill:14px;--fs-label:12px;--content:calc(100vw - 32px)}
-  .slide{padding:84px 16px 72px;gap:24px}
+  .slide{padding:84px 16px 112px;gap:24px}
+  /* sits just above the snake, which takes the bottom 34px */
+  .pager{display:flex;justify-content:space-between;position:fixed;left:16px;right:16px;bottom:44px;z-index:40;pointer-events:none}
+  .pager-btn{pointer-events:auto}
   .slide::before,.slide::after{flex:0 0 0;margin:0}
   .bar{top:14px;padding:10px 22px}
   .bar img{height:22px}
@@ -329,7 +343,7 @@ body.idle,body.idle *{cursor:none!important}
   @page{size:1600px 900px;margin:0}
   :root{--u:16px}
   html,body{height:auto;overflow:visible;background:#fff}
-  .wash,.snake,body::before{display:none}
+  .wash,.snake,.pager,body::before{display:none}
   .bar{position:absolute}
   .deck{position:static}
   .slide{position:relative;inset:auto;visibility:visible;height:900px;overflow:hidden;break-after:page}
