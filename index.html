@@ -3,166 +3,212 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PyDelhi: an introduction</title>
-<meta name="description" content="A short introduction to PyDelhi, Delhi NCR's Python community: what we do, what's in it for you, and how to help.">
+<title>PyDelhi | North India's Largest Python Community</title>
+<meta name="description" content="An eleven-slide introduction to PyDelhi, North India's largest Python community: free monthly meetups since 2011, run by volunteers.">
 <meta name="theme-color" content="#00296B">
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/brand/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
-<meta property="og:title" content="PyDelhi: an introduction">
-<meta property="og:description" content="Delhi NCR's Python community, in ten slides.">
+<meta property="og:site_name" content="PyDelhi">
+<meta property="og:title" content="PyDelhi | North India's Largest Python Community">
+<meta property="og:description" content="Free monthly meetups since 2011, run by volunteers. Here's what we do and how to join in.">
 <meta property="og:image" content="https://pydelhi.github.io/pydelhi-intro/assets/brand/og-default.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@pydelhi">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-slide="1">
 
-<div class="bg" aria-hidden="true"><i class="orb orb-gold"></i><i class="orb orb-blue"></i></div>
+<div class="wash" aria-hidden="true"><i class="orb orb-gold"></i><i class="orb orb-blue"></i></div>
 
-<header class="chrome">
-  <a class="brand" href="https://pydelhi.org" aria-label="PyDelhi website"><img src="assets/brand/pydelhi-wordmark.svg" alt="PyDelhi"></a>
-  <span class="count" id="count" aria-live="polite">1 / 10</span>
-</header>
+<!-- the site's floating pill, with just the wordmark in it -->
+<header class="bar"><img src="assets/brand/pydelhi-wordmark.svg" alt="PyDelhi"></header>
 
-<main class="deck" id="deck">
+<!-- Written for a projector: one headline per slide, a picture doing the rest, and every word big enough to read from the back row -->
+<main class="deck" id="deck" aria-roledescription="slide deck">
 
-  <!-- 1 · TITLE -->
-  <section class="slide slide-title" aria-label="Introduction">
-    <h1 class="r" style="--i:0">Where Delhi's <em>Pythonistas</em> <span>come together.</span></h1>
-    <p class="lede r" style="--i:1">A short introduction to PyDelhi: what we do, what's in it for you, and how you can help.</p>
-    <p class="hint r" style="--i:2"><kbd>→</kbd> or swipe to begin</p>
+  <!-- 1 · HELLO: the home page hero, with its four photos scattered round the headline -->
+  <section class="slide s-hero" aria-label="North India's Largest Python Community">
+    <div class="hero-photos" aria-hidden="true">
+      <figure class="hp hp-1"><img src="assets/photos/speaker-on-stage.jpg" alt=""><span>Talks</span></figure>
+      <figure class="hp hp-2"><img src="assets/photos/lobby-group-photo.jpg" alt=""><span>Meetups</span></figure>
+      <figure class="hp hp-3"><img src="assets/photos/iwd-meetup.jpg" alt=""><span>Workshops</span></figure>
+      <figure class="hp hp-4"><img src="assets/photos/birds-of-a-feather.jpg" alt=""><span>Birds of a Feather</span></figure>
+    </div>
+    <h1 data-m="rise">North India's<br><span class="gold">Largest Python</span><br><span class="light">Community</span></h1>
   </section>
 
-  <!-- 2 · WHO -->
-  <section class="slide" aria-label="What is PyDelhi">
-    <p class="eyebrow r" style="--i:0">So, what is PyDelhi?</p>
-    <h2 class="r" style="--i:1">A volunteer-run community, <em>since 2011.</em></h2>
-    <p class="lede r" style="--i:2">Students, professionals, teachers and founders across Delhi NCR who share one thing: they like Python, and they like learning from each other.</p>
-    <ul class="stats">
-      <li class="r" style="--i:3"><b data-count="15" data-suffix="">15</b><span>years of Saturdays</span></li>
-      <li class="r" style="--i:4"><b data-count="14" data-suffix="k+">14k+</b><span>members</span></li>
-      <li class="r" style="--i:5"><b data-count="350" data-suffix="+">350+</b><span>speakers on our stages</span></li>
-    </ul>
-  </section>
-
-  <!-- 3 · WHAT WE DO -->
-  <section class="slide" aria-label="What we do">
-    <p class="eyebrow r" style="--i:0">What we do</p>
-    <h2 class="r" style="--i:1">More than a <em>monthly meetup.</em></h2>
-    <ul class="cards cards-3">
-      <li class="card blue r" style="--i:2"><i class="ph ph-calendar-dots"></i><strong>Talk meetups</strong><p>The regular Saturday: talks, lightning talks and conversation over chai.</p></li>
-      <li class="card yellow r" style="--i:3"><i class="ph ph-laptop"></i><strong>Workshops</strong><p>Hands-on sessions where you code along, at meetups and at colleges.</p></li>
-      <li class="card green r" style="--i:4"><i class="ph ph-chats-circle"></i><strong>Birds of a Feather</strong><p>Small circles around one topic, where everyone gets a turn.</p></li>
-      <li class="card yellow r" style="--i:5"><i class="ph ph-git-pull-request"></i><strong>Dev sprints</strong><p>A day of open source, with mentors beside first-time contributors.</p></li>
-      <li class="card green r" style="--i:6"><i class="ph ph-handshake"></i><strong>Joint meetups</strong><p>Mega meetups with other communities in the city.</p></li>
-      <li class="card blue r" style="--i:7"><i class="ph ph-microphone-stage"></i><strong>Conferences</strong><p>PyDelhi Conf, and a hand in bringing PyCon India to Delhi.</p></li>
-    </ul>
-  </section>
-
-  <!-- 4 · TIMELINE -->
-  <section class="slide" aria-label="Our story">
-    <p class="eyebrow r" style="--i:0">Our story</p>
-    <h2 class="r" style="--i:1">Fifteen years, <em>one Saturday at a time.</em></h2>
-    <ol class="timeline">
-      <li class="r" style="--i:2"><b>2011</b><strong>The first meetups</strong><p>A few Python developers start meeting. Their mailing list, ncr-python.in, still runs.</p></li>
-      <li class="r" style="--i:3"><b>2016</b><strong>PyDelhi Conf</strong><p>The first conference, and PyCon India comes to New Delhi.</p></li>
-      <li class="r" style="--i:4"><b>2018</b><strong>Mega meetups</strong><p>International Women's Day, and a FOSS meetup at Adobe with communities from across the city.</p></li>
-      <li class="r" style="--i:5"><b>2019</b><strong>Dev sprints</strong><p>First-timers send their first open source pull requests.</p></li>
-      <li class="r" style="--i:6"><b>2023</b><strong>Conf returns</strong><p>A third edition, with talks recorded on YouTube.</p></li>
-      <li class="r" style="--i:7"><b>Now</b><strong>Every month</strong><p>Meetups and RSVPs on Commudle, proposals reviewed in the open on GitHub.</p></li>
-    </ol>
-  </section>
-
-  <!-- 5 · A SATURDAY -->
-  <section class="slide slide-photos" aria-label="What a meetup is like">
-    <p class="eyebrow r" style="--i:0">What a meetup is like</p>
-    <h2 class="r" style="--i:1">Show up. <em>Stay for the chai.</em></h2>
-    <div class="photos">
-      <figure class="r" style="--i:2;--rot:-2deg"><img src="assets/photos/speaker-on-stage.jpg" alt="A speaker on stage at a PyDelhi meetup" loading="lazy"><figcaption>A talk</figcaption></figure>
-      <figure class="r" style="--i:3;--rot:1.5deg"><img src="assets/photos/birds-of-a-feather.jpg" alt="A small Birds of a Feather circle" loading="lazy"><figcaption>A circle</figcaption></figure>
-      <figure class="r" style="--i:4;--rot:-1deg"><img src="assets/photos/django-hack-group.jpg" alt="A group working at a dev sprint" loading="lazy"><figcaption>A sprint</figcaption></figure>
-      <figure class="r" style="--i:5;--rot:2deg"><img src="assets/photos/april-meetup-group.jpg" alt="Attendees posing together after a meetup" loading="lazy"><figcaption>The group photo</figcaption></figure>
+  <!-- 2 · SINCE 2011: one square per month, filled for each month we met -->
+  <section class="slide s-stats" aria-label="140+ meetups since 2011">
+    <h2 class="h2" data-m="rise"><span data-count>140</span>+ meetups since 2011.</h2>
+    <div class="graph-card" data-m="rise">
+      <div class="graph-wrap">
+        <div class="graph" id="graph" role="img" aria-label="Grid of every month since 2011, filled for each month PyDelhi met"></div>
+        <div class="graph-ends" aria-hidden="true"><span>2011</span><span>Today</span></div>
+      </div>
+      <dl class="stat-pair">
+        <div><dt>Speakers</dt><dd data-count>350+</dd></div>
+        <div><dt>Members</dt><dd data-count>14k+</dd></div>
+      </dl>
     </div>
   </section>
 
-  <!-- 6 · FOR YOU -->
-  <section class="slide" aria-label="What's in it for you">
-    <p class="eyebrow r" style="--i:0">How it helps you</p>
-    <h2 class="r" style="--i:1">What's in it <em>for you?</em></h2>
-    <ul class="cards cards-5">
-      <li class="card blue r" style="--i:2"><i class="ph ph-briefcase"></i><strong>Hire or get hired</strong><p>Say who you're hiring, or what you're looking for, right on stage.</p></li>
-      <li class="card yellow r" style="--i:3"><i class="ph ph-users-three"></i><strong>Find collaborators</strong><p>Meet people who want to build the thing you're building.</p></li>
-      <li class="card green r" style="--i:4"><i class="ph ph-student"></i><strong>Learn new stuff</strong><p>Real talks from people who shipped it, and time to ask.</p></li>
-      <li class="card blue r" style="--i:5"><i class="ph ph-hand-heart"></i><strong>Get mentored</strong><p>Someone a few steps ahead is always around for advice.</p></li>
-      <li class="card yellow r" style="--i:6"><i class="ph ph-smiley"></i><strong>Make friends</strong><p>Like-minded, slightly geeky, and good company.</p></li>
+  <!-- 3 · FORMATS: each right arrow lights the next row, opens its line and swaps the big photo beside the list -->
+  <section class="slide s-formats" aria-label="One Saturday a month, many ways in">
+    <h2 class="h2" data-m="rise">One Saturday a month, many ways in.</h2>
+    <div class="formats-wrap">
+    <ul class="formats" id="formats">
+      <li class="format" data-m="rise" data-img="assets/photos/speaker-on-stage.jpg"><img class="format-thumb" src="assets/photos/speaker-on-stage.jpg" alt=""><span class="format-name">Talks</span><span class="format-desc">Something you built, broke or learned</span></li>
+      <li class="format" data-m="rise" data-img="assets/photos/iwd-meetup.jpg"><img class="format-thumb" src="assets/photos/iwd-meetup.jpg" alt=""><span class="format-name">Workshops</span><span class="format-desc">Laptops open, code along</span></li>
+      <li class="format" data-m="rise" data-img="assets/photos/birds-of-a-feather.jpg"><img class="format-thumb" src="assets/photos/birds-of-a-feather.jpg" alt=""><span class="format-name">Birds of a Feather</span><span class="format-desc">Small circles, one topic</span></li>
+      <li class="format" data-m="rise" data-img="assets/photos/django-hack-group.jpg"><img class="format-thumb" src="assets/photos/django-hack-group.jpg" alt=""><span class="format-name">Dev sprints</span><span class="format-desc">Open source, with mentors</span></li>
     </ul>
-  </section>
-
-  <!-- 7 · SPEAK -->
-  <section class="slide" aria-label="Speak">
-    <p class="eyebrow r" style="--i:0">Take the stage</p>
-    <h2 class="r" style="--i:1">Everyone has <em>something to share.</em></h2>
-    <p class="lede r" style="--i:2">Most of the room is new to Python or to speaking. Pick a length that suits you.</p>
-    <ul class="picks">
-      <li class="pick blue r" style="--i:3"><span class="pick-name"><i class="ph ph-lightning"></i>Lightning talk</span><span class="pick-time"><b>5</b> min</span><span class="pick-bar"><i style="--w:5"></i></span><p>One idea, slides optional. The easiest way onto the stage.</p></li>
-      <li class="pick yellow r" style="--i:4"><span class="pick-name"><i class="ph ph-presentation-chart"></i>Talk</span><span class="pick-time"><b>20 to 30</b> min</span><span class="pick-bar"><i style="--w:30"></i></span><p>Something you built, broke or learned, with time for questions.</p></li>
-      <li class="pick green r" style="--i:5"><span class="pick-name"><i class="ph ph-laptop"></i>Workshop</span><span class="pick-time"><b>60 to 90</b> min</span><span class="pick-bar"><i style="--w:90"></i></span><p>Hands-on, where the room codes along with you.</p></li>
-    </ul>
-    <p class="foot r" style="--i:6">Proposals are reviewed in the open → <a href="https://github.com/pydelhi/talks/issues/new?template=talk-proposal.yaml" target="_blank" rel="noopener">github.com/pydelhi/talks</a></p>
-  </section>
-
-  <!-- 8 · HELP -->
-  <section class="slide" aria-label="How you can help">
-    <p class="eyebrow r" style="--i:0">How you can help</p>
-    <h2 class="r" style="--i:1">Meetups run on <em>people.</em></h2>
-    <ul class="cards cards-4">
-      <li class="card blue r" style="--i:2"><i class="ph ph-buildings"></i><strong>Host us</strong><p>A venue for a Saturday afternoon: a hall, a projector, Wi-Fi.</p></li>
-      <li class="card yellow r" style="--i:3"><i class="ph ph-hand-coins"></i><strong>Sponsor</strong><p>Food, chai, recordings and swag. Every meetup stays free.</p></li>
-      <li class="card green r" style="--i:4"><i class="ph ph-hands-clapping"></i><strong>Volunteer</strong><p>Review talks, run the room, write the recap. Most of us started by helping once.</p></li>
-      <li class="card blue r" style="--i:5"><i class="ph ph-megaphone"></i><strong>Spread the word</strong><p>Bring a friend, share an event, tell your college.</p></li>
-    </ul>
-    <p class="foot r" style="--i:6">Want to code? Projects live at <a href="https://github.com/pydelhi" target="_blank" rel="noopener">github.com/pydelhi</a></p>
-  </section>
-
-  <!-- 9 · SPONSORS -->
-  <section class="slide" aria-label="Our sponsors">
-    <p class="eyebrow r" style="--i:0">With thanks to</p>
-    <h2 class="r" style="--i:1">Companies that <em>kept the room free.</em></h2>
-    <div class="logos r" style="--i:2">
-      <img src="assets/logos/microsoft.svg" alt="Microsoft"><img src="assets/logos/adobe.svg" alt="Adobe"><img src="assets/logos/github-mark.svg" alt="GitHub"><img src="assets/logos/thoughtworks.png" alt="Thoughtworks"><img src="assets/logos/zomato.png" alt="Zomato"><img src="assets/logos/nykaa.svg" alt="Nykaa"><img src="assets/logos/gojek.svg" alt="Gojek"><img src="assets/logos/epam.png" alt="EPAM Systems"><img src="assets/logos/tata1mg.svg" alt="Tata 1mg"><img src="assets/logos/htmedia.svg" alt="HT Media"><img src="assets/logos/redhat.svg" alt="Red Hat"><img src="assets/logos/fossasia.svg" alt="FOSSASIA">
+    <div class="format-preview" id="format-preview" data-m="pop" aria-hidden="true"></div>
     </div>
-    <p class="lede r" style="--i:3">Venues, food and chai come from sponsors. Everything else comes from volunteers.</p>
   </section>
 
-  <!-- 10 · CONTACT -->
-  <section class="slide slide-end" aria-label="Stay in touch">
-    <h2 class="r" style="--i:0">Save yourself a seat <em>at the next one.</em></h2>
-    <p class="lede r" style="--i:1">Free, every month, somewhere in Delhi NCR. Join to hear about it first.</p>
-    <div class="actions r" style="--i:2">
-      <a class="btn-primary" href="https://www.commudle.com/communities/pydelhi" target="_blank" rel="noopener">Join on Commudle <i class="ph ph-arrow-up-right"></i></a>
-      <a class="btn-ghost" href="https://chat.whatsapp.com/DFaT2HSZVfOBocqP4Bob4j" target="_blank" rel="noopener">Join WhatsApp community <i class="ph ph-whatsapp-logo"></i></a>
+  <!-- 4 · SATURDAYS: a pile of prints; each right arrow tosses the top one to the back, left brings it back -->
+  <section class="slide s-pile" aria-label="Saturdays look like this">
+    <h2 class="h2" data-m="rise">Saturdays look like this.</h2>
+    <div class="pile" id="pile" data-m="pop" aria-label="Photos from past meetups">
+      <figure><img src="assets/photos/full-room-crowd.jpg" alt="A full room of attendees posing for a group photo"></figure>
+      <figure><img src="assets/photos/aiohttp-talk.jpg" alt="A speaker presenting a talk on installing aiohttp"></figure>
+      <figure><img src="assets/photos/lounge-discussion-circle.jpg" alt="Attendees in a discussion circle on lounge chairs"></figure>
+      <figure><img src="assets/photos/kubernetes-talk.jpg" alt="A speaker walking through Kubernetes control loops"></figure>
+      <figure><img src="assets/photos/django-cake.jpg" alt="Attendees clapping around a Django cake"></figure>
+      <figure><img src="assets/photos/dspy-talk.jpg" alt="A speaker presenting a DSPy talk to a seated room"></figure>
+      <figure><img src="assets/photos/april-meetup-group.jpg" alt="Group photo of attendees at a PyDelhi meetup"></figure>
     </div>
-    <ul class="links r" style="--i:3">
-      <li><a href="https://pydelhi.org" target="_blank" rel="noopener"><i class="ph ph-globe"></i>pydelhi.org</a></li>
-      <li><a href="https://github.com/pydelhi" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i>GitHub</a></li>
-      <li><a href="https://www.youtube.com/channel/UC3QVyJ-Zt0QoYAibn4SD20A" target="_blank" rel="noopener"><i class="ph ph-youtube-logo"></i>YouTube</a></li>
-      <li><a href="https://www.linkedin.com/company/pydelhi-community/" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i>LinkedIn</a></li>
-      <li><a href="https://x.com/pydelhi" target="_blank" rel="noopener"><i class="ph ph-x-logo"></i>X</a></li>
-      <li><a href="mailto:contact@pydelhi.org"><i class="ph ph-envelope-simple"></i>contact@pydelhi.org</a></li>
+  </section>
+
+  <!-- 5 · FOR YOU: tilted pastel notes, a big icon and a few words each -->
+  <section class="slide s-notes" aria-label="What's in it for you">
+    <h2 class="h2" data-m="rise">What's in it for you.</h2>
+    <ul class="notes">
+      <li class="note-card n-blue" data-m="drop"><i class="ph ph-student" aria-hidden="true"></i><h3>Learn from people who shipped it</h3></li>
+      <li class="note-card n-yellow" data-m="drop"><i class="ph ph-briefcase" aria-hidden="true"></i><h3>Hire, or get hired</h3></li>
+      <li class="note-card n-green" data-m="drop"><i class="ph ph-users-three" aria-hidden="true"></i><h3>Find people to build with</h3></li>
+      <li class="note-card n-blue" data-m="drop"><i class="ph ph-microphone-stage" aria-hidden="true"></i><h3>Give your first talk</h3></li>
     </ul>
+  </section>
+
+  <!-- 6 · SPEAK: the talk-length ruler from the home page -->
+  <section class="slide s-speak" aria-label="Got five minutes? Or ninety?">
+    <div class="speak-panel" data-m="rise">
+      <h2 class="h2" data-m="rise">Got five minutes? Or ninety?</h2>
+      <div class="speak-body">
+        <div class="ruler" id="ruler">
+          <div class="ruler-scale" aria-hidden="true"><span style="--at:0">0</span><span style="--at:30">30</span><span style="--at:60">60</span><span style="--at:90">90 min</span></div>
+          <div class="ruler-row"><span class="ruler-name">Lightning talk</span><span class="ruler-bar" style="--to:5"><span>5 min</span></span></div>
+          <div class="ruler-row"><span class="ruler-name">Talk</span><span class="ruler-bar" style="--to:30"><span>20 to 30 min</span></span></div>
+          <div class="ruler-row"><span class="ruler-name">Workshop</span><span class="ruler-bar ruler-bar-long" style="--to:90"><span>60 to 90 min</span></span></div>
+          <div class="ruler-row"><span class="ruler-name">Birds of a Feather</span><span class="ruler-bar ruler-bar-open" style="--to:60"><span>open-ended</span></span></div>
+        </div>
+        <figure class="scan" data-m="drop"><img src="assets/qr/talks.svg" alt="QR code for github.com/pydelhi/talks"><figcaption>Propose a session</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · VOLUNTEER: photo on the left, role pills popping in on the right -->
+  <section class="slide s-vol" aria-label="Help us run the room">
+    <div class="vol">
+      <img class="vol-img" data-m="photo" src="assets/photos/volunteers-group.jpg" alt="PyDelhi volunteers and attendees at a meetup">
+      <div class="vol-body">
+        <h2 class="h2" data-m="rise">Help us run the room.</h2>
+        <ul class="vol-roles">
+          <li class="r-before" data-m="pop"><i class="ph ph-check-square-offset"></i>Reviewing talks</li>
+          <li class="r-before" data-m="pop"><i class="ph ph-buildings"></i>Finding venues</li>
+          <li class="r-day" data-m="pop"><i class="ph ph-clipboard-text"></i>Registrations</li>
+          <li class="r-day" data-m="pop"><i class="ph ph-camera"></i>Event photography</li>
+          <li class="r-any" data-m="pop"><i class="ph ph-palette"></i>Design</li>
+          <li class="r-any" data-m="pop"><i class="ph ph-instagram-logo"></i>Social media</li>
+          <li class="r-any" data-m="pop"><i class="ph ph-pencil-simple"></i>Writing</li>
+          <li class="r-else" data-m="pop"><i class="ph ph-dots-three"></i>Something else</li>
+        </ul>
+        <figure class="scan" data-m="drop"><img src="assets/qr/volunteer.svg" alt="QR code for pydelhi.org/volunteer"><figcaption>Volunteer with us</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · SPONSOR: the title with the code to scan across from it, then the three ways a company can back a meetup,
+       as the sponsor page's photo cards, each in its own pastel -->
+  <section class="slide s-doors" aria-label="Help a room full of developers show up">
+    <div class="doors-head">
+      <h2 class="h2" data-m="rise">Help a room full of developers show up.</h2>
+      <figure class="scan" data-m="drop"><img src="assets/qr/sponsor.svg" alt="QR code for pydelhi.org/sponsor"><figcaption>Sponsor us</figcaption></figure>
+    </div>
+    <div class="doors">
+      <article class="door door-blue" data-m="drop">
+        <img src="assets/photos/birds-of-a-feather.jpg" alt="A PyDelhi meetup in a company meeting room">
+        <span class="door-tag"><i class="ph ph-buildings"></i>Host</span>
+        <h3>Host a meetup</h3>
+        <p>A room, a screen and Wi-Fi on a Saturday</p>
+      </article>
+      <article class="door door-yellow" data-m="drop">
+        <img src="assets/photos/lunch.jpg" alt="Attendees eating lunch together at a PyDelhi meetup">
+        <span class="door-tag"><i class="ph ph-coffee"></i>Feed</span>
+        <h3>Feed the room</h3>
+        <p>Lunch and chai keep people talking</p>
+      </article>
+      <article class="door door-green" data-m="drop">
+        <img src="assets/photos/aiohttp-talk.jpg" alt="A speaker presenting at a PyDelhi meetup">
+        <span class="door-tag"><i class="ph ph-hand-heart"></i>Donate</span>
+        <h3>Donate to PyDelhi</h3>
+        <p>Venues, gear and the meetups to come</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 9 · LOGOS: speaker companies and past sponsors as two marquees, drawn navy -->
+  <section class="slide s-logos" aria-label="Speakers and sponsors">
+    <h2 class="h2" data-m="rise">Free, every time. Here's who helps.</h2>
+    <div class="logo-rows" data-m="rise">
+      <h3 class="logos-title" data-m="fade">Our speakers have come from</h3>
+      <div class="marquee" data-m="fade"><div class="marquee-track" id="speaker-logos"></div></div>
+      <h3 class="logos-title" data-m="fade">Past sponsors &amp; venues</h3>
+      <div class="marquee marquee-reverse" data-m="fade"><div class="marquee-track" id="sponsor-logos"></div></div>
+    </div>
+  </section>
+
+  <!-- 10 · CODE OF CONDUCT: the whole thing in one breath, with the mascot coiled beside it -->
+  <section class="slide s-coc" aria-label="How we treat each other">
+    <h2 class="h2" data-m="rise">How we treat each other.</h2>
+    <div class="coc-breath" data-m="rise">
+      <svg class="coc-coil" viewBox="0 0 170 130" aria-hidden="true"><path id="coil" d="M6 112 H64 C 112 112, 130 72, 104 50 C 80 30, 46 50, 58 76 C 68 98, 104 92, 116 68"/></svg>
+      <div>
+        <p>Be friendly. Be patient.<br>Disagree without attacking anyone.</p>
+        <p class="coc-rule">If someone asks you to stop, <em>stop.</em></p>
+      </div>
+      <figure class="scan" data-m="drop"><img src="assets/qr/coc.svg" alt="QR code for pydelhi.org/coc"><figcaption>pydelhi.org/coc</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 11 · JOIN: white, with tilted photos round two big codes -->
+  <section class="slide s-join" aria-label="Save yourself a seat at the next one">
+    <div class="join-photos" aria-hidden="true">
+      <span class="jp jp-1"><img src="assets/photos/speaker-with-mic.jpg" alt=""></span>
+      <span class="jp jp-2"><img src="assets/photos/organisers-group.jpg" alt=""></span>
+      <span class="jp jp-3"><img src="assets/photos/speaker-qr-slide.jpg" alt=""></span>
+      <span class="jp jp-4"><img src="assets/photos/tcp-pipelining-talk.jpg" alt=""></span>
+    </div>
+    <div class="join-inner">
+      <h2 class="join-title" data-m="rise">Save yourself a seat <em data-m="underline">at the next one.</em></h2>
+      <!-- phones out: the two places to join, as codes big enough to scan from the back of the room -->
+      <div class="join-codes">
+        <figure class="code" data-m="drop"><img src="assets/qr/commudle.svg" alt="QR code for PyDelhi on Commudle"><figcaption>Commudle</figcaption></figure>
+        <figure class="code" data-m="drop"><img src="assets/qr/whatsapp.svg" alt="QR code for the PyDelhi WhatsApp community"><figcaption>WhatsApp</figcaption></figure>
+      </div>
+      <p class="handles" data-m="fade">pydelhi.org</p>
+    </div>
   </section>
 </main>
 
-<footer class="controls">
-  <button id="prev" aria-label="Previous slide"><i class="ph ph-arrow-left"></i></button>
-  <div class="dots" id="dots" role="tablist" aria-label="Slides"></div>
-  <button id="next" aria-label="Next slide"><i class="ph ph-arrow-right"></i></button>
-</footer>
-<div class="progress" id="progress" aria-hidden="true"></div>
+<!-- the mascot is the progress bar: it grows along the bottom edge, one stretch per slide -->
+<svg class="snake" id="snake" aria-hidden="true"></svg>
 
 <script src="deck.js"></script>
 </body>
